@@ -46,7 +46,8 @@ public class Maximo {
 
     /**
      * Hace lo mismo que el método anterior, pero captura las
-     * posibles excepciones que se puedan generar
+     * posibles excepciones que se puedan generar. (error porque el return está en
+     * el bloque try, corrigir)
      * 
      * @return el mayor número en el archivo numeros.txt
      */
