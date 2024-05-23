@@ -1,3 +1,5 @@
+package src;
+
 /**
  * - Excepción personalizada para La clase GestorArrays. La
  * clase que modela esta excepción contendrá como atributo el argumento
@@ -5,7 +7,7 @@
  *
  * 
  * @author (Sarah Soares)
- * @version (21-05-2024)
+ * @version (23-05-2024)
  */
 
 public class ArgumentoIncorrectoExcepcion extends RuntimeException {
@@ -14,10 +16,9 @@ public class ArgumentoIncorrectoExcepcion extends RuntimeException {
 
     public ArgumentoIncorrectoExcepcion(String valorErroneo) {
         this.valorErroneo = valorErroneo;
+    }
 
-        if (valorErroneo <= 10) {
-
-        }
-
+    public String toString() {
+        return "Has puesto un valor incorrecto: " + valorErroneo;
     }
 }
